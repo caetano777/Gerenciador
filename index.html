@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Reserva de Salas</title>
+    <script src="scriptTelainicial.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="forma-container cadastrar">
+            <form id="formAluno">
+                <h1>Login Aluno!</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>Use seu e-mail para se registrar: </span>
+                <input type="text" id="username" placeholder="Nome">
+                <input type="email" id="email" placeholder="E-mail">
+                <input type="password" id="password" placeholder="Senha">
+                <button id="loginBotaoAluno" >Login</button>
+            </form>
+           
+        </div>
+        <div class="forma-container login">
+            <form id="formProfessor">
+                <h1>Login Professor!</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>Use seu e-mail para realizar o login</span>
+                <input type="email" id="emailProfessor" placeholder="Email">
+                <input type="number" id="identificadorProfessor" placeholder="Identificador">
+                <input type="text" id="usernameProfessor" placeholder="Nome">
+                <input type="password" id="passwordProfessor" placeholder="Senha">
+                <a href="#">Esqueceu a senha?</a>
+                <button id="loginBotaoProf">Login</button>
+            </form>
+           
+        </div>
+        <div class="alternar-container">
+            <div class="alternar">
+                <div class="alternar-painel alternar-esquerda">
+                    <h1>Aluno(a)?</h1>
+                    <p>Acesse utilizando os seus dados!</p>
+                    <button class="hidden" id="login">Clique Aqui</button>
+                </div>
+                <div class="alternar-painel alternar-direita">
+                    <h1>Professor(a)?</h1>
+                    <p>Acesse utilizando os seus dados!</p>
+                    <button class="hidden" id="register">Clique Aqui</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scriptAluno.js"></script>
+    <script src="scriptProfessor.js"></script>
+</body>
+
+</html>

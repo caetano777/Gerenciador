@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(226, 226, 226, 0.5), rgba(201, 255, 208, 0.4)), url('campus2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#descricao-reserva {
+    height: 50px;
+    padding: 0px;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+    resize: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #1b7c21;
+}
+
+.content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.content label {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.content input, .content textarea, .content select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.content button {
+    background-color: #1b7c21;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.content button:hover {
+    background-color: #136b1b;
+}
+
+.verificar-salas ul, .visualizar-reservas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.verificar-salas .sala, .visualizar-reservas .reserva {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.verificar-salas .sala span, .visualizar-reservas .reserva span {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.visualizar-reservas .reserva button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.visualizar-reservas .reserva button:hover {
+    background-color: #39130f;
+}

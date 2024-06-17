@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reserva de Salas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content cadastro-sala">
+            <h2>Cadastrar Sala</h2>
+            <form id="form-cadastro-sala">
+                <label for="nome-sala">Nome da Sala:</label>
+                <input type="text" id="nome-sala" required>
+                <label for="descricao-sala">Descrição:</label>
+                <textarea class="tamanho" id="descricao-sala" rows="4"></textarea>
+                <label for="qtd-alunos">Quantidade de Alunos:</label>
+                <input type="number" id="qtd-alunos" required>
+                <label for="predio">Prédio:</label>
+                <select id="predio" required>
+                    <option value="1">Prédio 1</option>
+                    <option value="2">Prédio 2</option>
+                </select>
+                <button type="submit">Cadastrar Sala</button>
+            </form>
+        </div>
+        
+        <div class="content reserva-sala">
+            <h2>Reservar Sala</h2>
+            <form id="form-reserva-sala">
+                <label for="sala">Selecione a Sala:</label>
+                <select id="sala" required></select>
+                <label for="data-reserva">Data da Reserva:</label>
+                <input type="date" id="data-reserva" required>
+                <label for="hora-inicio">Hora de Início:</label>
+                <input type="time" id="hora-inicio" required>
+                <label for="hora-fim">Hora de Término:</label>
+                <input type="time" id="hora-final" required>
+                <button type="submit">Reservar Sala</button>
+            </form>
+        </div>
+        
+        <div class="content visualizar-remover">
+            <h2>Reservas</h2>
+            <ul id="lista-reservas"></ul>
+        </div>
+    </div>
+
+    <script src="scriptSala.js"></script>
+</body>
+</html>

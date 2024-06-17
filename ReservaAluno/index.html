@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reserva de Salas para Alunos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content verificar-salas">
+            <h2>Salas Disponíveis</h2>
+            <ul id="lista-salas">
+            </ul>
+        </div>
+        
+        <div class="content reserva-sala">
+            <h2>Reservar Sala</h2>
+            <form id="form-reserva-sala">
+                <label for="sala">Selecione a Sala:</label>
+                <select id="sala" required>
+                </select>
+                <label for="data-reserva">Data da Reserva:</label>
+                <input type="date" id="data-reserva" required>
+                <label for="hora-inicio">Hora de Início:</label>
+                <input type="time" id="hora-inicio" required>
+                <label for="hora-fim">Hora de Término:</label>
+                <input type="time" id="hora-fim" required>
+                <label for="descricao-reserva">Descrição:</label>
+                <textarea id="descricao-reserva" rows="4"></textarea>
+                <button type="submit">Reservar Sala</button>
+            </form>
+        </div>
+        
+        <div class="content visualizar-reservas">
+            <h2>Minhas Reservas</h2>
+            <ul id="lista-reservas">
+            </ul>
+        </div>
+    </div>
+
+    <script src="scriptreservaaluno.js"></script>
+</body>
+</html>
